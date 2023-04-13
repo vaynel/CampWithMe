@@ -3,10 +3,7 @@ package com.trillon.camp.comewithme.dto;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import javax.servlet.annotation.HandlesTypes;
-
-import com.trillon.camp.comewithme.common.file.FileInfo;
-import com.trillon.camp.members.dto.Member;
+import com.trillon.camp.common.file.FileInfo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

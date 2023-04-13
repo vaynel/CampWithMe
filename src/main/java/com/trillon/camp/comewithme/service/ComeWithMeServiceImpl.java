@@ -11,13 +11,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.trillon.camp.comewithme.common.file.FileInfo;
-import com.trillon.camp.comewithme.common.file.FileRepositoryYG;
-import com.trillon.camp.comewithme.common.file.FileUtilYG;
-import com.trillon.camp.comewithme.common.page.Paging;
 import com.trillon.camp.comewithme.dto.Answer;
 import com.trillon.camp.comewithme.dto.ComeWithMeBoard;
 import com.trillon.camp.comewithme.repository.ComeWithMeRepository;
+import com.trillon.camp.common.file.FileInfo;
+import com.trillon.camp.common.file.FileRepositoryYG;
+import com.trillon.camp.common.file.FileUtilYG;
+import com.trillon.camp.common.paging.Paging;
 
 import lombok.RequiredArgsConstructor;
 

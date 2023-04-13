@@ -1,6 +1,5 @@
 package com.trillon.camp.campingHome.file;
 
-import com.trillon.camp.campingHome.board.dto.Board;
 import lombok.Data;
 
 @Data

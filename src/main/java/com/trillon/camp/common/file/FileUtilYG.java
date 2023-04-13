@@ -1,4 +1,4 @@
-package com.trillon.camp.comewithme.common.file;
+package com.trillon.camp.common.file;
 
 import java.io.File;
 import java.io.IOException;

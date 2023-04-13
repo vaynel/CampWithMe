@@ -1,4 +1,4 @@
-package com.trillon.camp.comewithme.common.file;
+package com.trillon.camp.common.file;
 
 import java.util.List;
 import java.util.Map;

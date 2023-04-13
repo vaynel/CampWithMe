@@ -1,8 +1,8 @@
-package com.trillon.camp.comewithme.common.file;
+package com.trillon.camp.common.file;
 
 import java.time.LocalDateTime;
 
-import com.trillon.camp.comewithme.common.code.Code;
+import com.trillon.camp.common.code.Code;
 
 import lombok.Data;
 

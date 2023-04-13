@@ -14,10 +14,10 @@ import org.springframework.web.multipart.MultipartFile;
 import com.trillon.camp.comewithme.dto.Answer;
 import com.trillon.camp.comewithme.dto.ComeWithMeBoard;
 import com.trillon.camp.comewithme.repository.ComeWithMeRepository;
-import com.trillon.camp.common.file.FileInfo;
-import com.trillon.camp.common.file.FileRepositoryYG;
-import com.trillon.camp.common.file.FileUtilYG;
 import com.trillon.camp.common.paging.Paging;
+import com.trillon.camp.util.file.FileInfo;
+import com.trillon.camp.util.file.FileRepository;
+import com.trillon.camp.util.file.FileUtil;
 
 import lombok.RequiredArgsConstructor;
 
@@ -28,8 +28,8 @@ public class ComeWithMeServiceImpl implements ComeWithMeService{
 	Logger logger =  LoggerFactory.getLogger(this.getClass());
 	
 	private final ComeWithMeRepository comeWithMeRepository;
-	private final FileRepositoryYG fileRepository;
-	private final FileUtilYG fileUtil;
+	private final FileRepository fileRepository;
+	private final FileUtil fileUtil;
 	
 	@Override
 	public Map<String, Object> selectBoardList(int page){

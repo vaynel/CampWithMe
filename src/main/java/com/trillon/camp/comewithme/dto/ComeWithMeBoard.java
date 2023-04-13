@@ -3,7 +3,7 @@ package com.trillon.camp.comewithme.dto;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import com.trillon.camp.common.file.FileInfo;
+import com.trillon.camp.util.file.FileInfo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

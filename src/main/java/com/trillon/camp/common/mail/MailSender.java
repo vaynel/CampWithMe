@@ -7,9 +7,9 @@ import javax.mail.internet.MimeMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
-import com.trillon.camp.comewithme.common.code.ErrorCode;
-import com.trillon.camp.comewithme.common.exception.HandlableException;
 import com.trillon.camp.common.code.Code;
+import com.trillon.camp.common.code.ErrorCode;
+import com.trillon.camp.common.exception.HandlableException;
 
 import lombok.RequiredArgsConstructor;
 

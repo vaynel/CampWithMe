@@ -1,4 +1,4 @@
-package com.trillon.camp.campingHome.board.dto;
+package com.trillon.camp.common.reply;
 
 import lombok.Data;
 

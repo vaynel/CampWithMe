@@ -1,4 +1,4 @@
-package com.trillon.camp.common.file;
+package com.trillon.camp.util.file;
 
 import java.time.LocalDateTime;
 
@@ -18,6 +18,7 @@ public class FileInfo {
 	private String groupName;
 	private Integer groupIdx;
 	private Integer bdIdx;
+	private Integer gnIdx;
 
 	public String getFullPath() {
 		return Code.STORAGE_PATH + groupName + "/" + savePath + renameFileName;

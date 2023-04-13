@@ -1,4 +1,4 @@
-package com.trillon.camp.campingHome.file;
+package com.trillon.camp.util.file;
 
 
 import org.apache.ibatis.annotations.Insert;
@@ -23,4 +23,18 @@ public interface FileRepository {
     List<FileInfo> selectFirstFile();
 
     //@Delete("delete * from test2 where rename_file_name = #{renameFileName}")
+    
+    
+    
+    
+    // comeWithMe와 관련된 것들
+    @Insert("insert into file_info(origin_file_name, rename_file_name, save_path, groupName, group_idx,bd_idx)"
+			+ " values(#{originFileName},#{renameFileName},#{savePath},#{groupName},#{groupIdx},#{bdIdx})")
+	void insertFileInfoFromComeWithMe(FileInfo fileInfo);
+	
+	@Select("select * from file_info where is_del = 0 and fl_idx=#{flIdx}")
+	FileInfo selectFileInfo(String flIdx);
+
+	@Select("select * from file_info where is_del = 0 and bd_idx = #{bdIdx}")
+	List<FileInfo> selectFileWithGroupFromComeWithMe(int bdIdx);
 }

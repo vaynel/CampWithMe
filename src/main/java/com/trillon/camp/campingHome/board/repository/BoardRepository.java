@@ -1,14 +1,19 @@
 package com.trillon.camp.campingHome.board.repository;
 
-import com.trillon.camp.campingHome.board.dto.Board;
-import com.trillon.camp.campingHome.board.dto.BoardForm;
-import com.trillon.camp.campingHome.board.dto.Paging;
-import com.trillon.camp.campingHome.board.dto.Reply;
-import com.trillon.camp.campingHome.naverShopping.dto.Item;
-import org.apache.ibatis.annotations.*;
+import java.util.List;
+
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import com.trillon.camp.campingHome.board.dto.Board;
+import com.trillon.camp.campingHome.board.dto.BoardForm;
+import com.trillon.camp.common.paging.Paging;
+import com.trillon.camp.common.reply.Reply;
+import com.trillon.camp.util.naverShopping.dto.Item;
 
 
 @Repository

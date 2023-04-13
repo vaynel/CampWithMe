@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.trillon.camp.comewithme.dto.Answer;
 import com.trillon.camp.comewithme.dto.ComeWithMeBoard;
-import com.trillon.camp.common.file.FileInfo;
+import com.trillon.camp.util.file.FileInfo;
 
 
 public interface ComeWithMeService {

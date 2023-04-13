@@ -1,4 +1,4 @@
-package com.trillon.camp.campingHome.naverShopping.dto;
+package com.trillon.camp.util.naverShopping.dto;
 
 import lombok.Data;
 

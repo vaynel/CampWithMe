@@ -1,29 +1,22 @@
-package com.trillon.camp.campingHome.naverShopping.service;
+package com.trillon.camp.util.naverShopping.service;
 
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mysql.cj.xdevapi.JsonArray;
-import com.trillon.camp.campingHome.naverShopping.dto.Item;
-import lombok.extern.slf4j.Slf4j;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.*;
-import java.net.*;
-import java.net.http.HttpHeaders;
-import java.nio.charset.StandardCharsets;
-import java.util.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trillon.camp.util.naverShopping.dto.Item;
+
+import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j

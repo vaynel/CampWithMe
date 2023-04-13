@@ -1,13 +1,14 @@
 package com.trillon.camp.campingHome.board.service;
 
-import com.trillon.camp.campingHome.board.dto.BoardForm;
-import com.trillon.camp.campingHome.board.dto.Reply;
-import org.json.simple.parser.ParseException;
-import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
+import org.json.simple.parser.ParseException;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.trillon.camp.campingHome.board.dto.BoardForm;
+import com.trillon.camp.common.reply.Reply;
 
 
 public interface BoardService {

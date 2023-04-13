@@ -1,17 +1,20 @@
-package com.trillon.camp.campingHome.file;
-
-import com.trillon.camp.common.code.ErrorCode;
-import com.trillon.camp.common.exception.HandlableException;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
-import org.springframework.web.multipart.MultipartFile;
+package com.trillon.camp.util.file;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.trillon.camp.common.code.Code;
+import com.trillon.camp.common.code.ErrorCode;
+import com.trillon.camp.common.exception.HandlableException;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @Component
 @RequiredArgsConstructor
@@ -71,8 +74,8 @@ public class FileUtil {
     }
 
     private String createUploadPath(FileInfo fileInfo){
-        new File(fileInfo.STORAGE_PATH + fileInfo.getGnIdx() +"/").mkdirs();
-        String uploadPath = fileInfo.STORAGE_PATH + fileInfo.getGnIdx() + "/" ;
+        new File(Code.STORAGE_PATH + String.valueOf(fileInfo.getGnIdx()) +"/").mkdirs();
+        String uploadPath = Code.STORAGE_PATH + String.valueOf(fileInfo.getGnIdx()) + "/" ;
         return uploadPath;
     }
 
